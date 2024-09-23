@@ -12,6 +12,10 @@ def flight_info(itinerary):
         itinerary_num = f"Itinerary {number}"
         print(f"{itinerary_num}: {name} - From {departure} to {arrival}")
 
+# V2:
+for index, (name, departure, arrival) in enumerate(itinerary):
+    print(f"{index + 1}: {name} - From {departure} to {arrival}")
+
 
 flight_itineraries = [("Alice", "New York", "London"), ("Bob", "Tokyo", "San Francisco")]
 flight_info(flight_itineraries)
