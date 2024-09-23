@@ -16,6 +16,10 @@ def add_book():
     else:
         library.append(book_add)
         print(library)
+
+# V2
+for index, (name, departure, arrival) in enumerate(itinerary):
+    print(f"{index + 1}: {name} - From {departure} to {arrival}")
     
 
 
